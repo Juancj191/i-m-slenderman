@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Clothing | Streetwear & Sneakers</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Banner -->
+  <div class="top-banner">
+    <span>Envío gratis en pedidos superiores a RD$8,000 · 100% Autenticado</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <span class="logo-main">Juan</span>
+        <span class="logo-sub">CLOTHING</span>
+      </a>
+
+      <div class="search-container">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <path d="m21 21-4.35-4.35"></path>
+        </svg>
+        <input type="text" class="search-input" id="searchInput" placeholder="Buscar marca, color, modelo...">
+      </div>
+
+      <nav class="header-nav" id="headerNav">
+        <a href="#sneakers">Sneakers</a>
+        <a href="#apparel">Ropa</a>
+        <a href="#accessories">Accesorios</a>
+        <a href="#collectibles">Coleccionables</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-icon" id="favBtn" aria-label="Favoritos" title="Favoritos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="favCount">0</span>
+        </button>
+
+        <button class="btn-icon" id="cartBtn" aria-label="Carrito" title="Carrito">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-count" id="cartCount">0</span>
+        </button>
+
+        <button class="btn-outline">Iniciar sesión</button>
+        <button class="btn-primary">Registrarse</button>
+
+        <button class="btn-icon mobile-menu-btn" id="menuBtn" aria-label="Menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Categories Bar -->
+  <div class="categories-bar">
+    <div class="categories-inner" id="categories">
+      <a href="#" class="category active" data-filter="all">Trending</a>
+      <a href="#" class="category" data-filter="jordan">Jordan</a>
+      <a href="#" class="category" data-filter="nike">Nike</a>
+      <a href="#" class="category" data-filter="adidas">Adidas</a>
+      <a href="#" class="category" data-filter="newbalance">New Balance</a>
+      <a href="#" class="category" data-filter="yeezy">Yeezy</a>
+      <a href="#" class="category" data-filter="luxury">Luxury</a>
+      <a href="#" class="category" data-filter="streetwear">Streetwear</a>
+    </div>
+  </div>
+
+  <!-- Brand logos strip -->
+  <section class="brands-strip">
+    <div class="brands-strip-inner">
+      <div class="brand-item"><span>Vans</span></div>
+      <div class="brand-item"><span>ASICS</span></div>
+      <div class="brand-item"><span>adidas</span></div>
+      <div class="brand-item"><span>UGG</span></div>
+      <div class="brand-item"><span>Crocs</span></div>
+      <div class="brand-item"><span>Nike</span></div>
+      <div class="brand-item"><span>Jordan</span></div>
+      <div class="brand-item"><span>New Balance</span></div>
+    </div>
+  </section>
+
+  <!-- Hero Banners -->
+  <section class="hero-banners">
+    <div class="banner-card banner-1">
+      <div class="banner-content">
+        <p class="banner-tag">JORDAN</p>
+        <h2>A VICTORY LAP<br>WORTH THE WAIT</h2>
+        <p class="banner-sub">AJ4 Retro Rare Air Tour Yellow</p>
+        <a href="#products" class="banner-btn">Shop Now</a>
+      </div>
+      <div class="banner-img">
+        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&h=500&fit=crop" alt="Jordan 4">
+      </div>
+    </div>
+
+    <div class="banner-card banner-2">
+      <div class="banner-content">
+        <p class="banner-tag">JORDAN</p>
+        <h2>Polished Up for the<br>Comeback</h2>
+        <p class="banner-sub">AJ8 Chrome</p>
+        <a href="#products" class="banner-btn">Shop Now</a>
+      </div>
+      <div class="banner-img">
+        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=600&h=500&fit=crop" alt="Jordan 8">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="section-header">
+      <h2>Trending ahora</h2>
+      <a href="#" class="see-all">Ver todo →</a>
+    </div>
+    <div class="products-grid" id="productsGrid">
+
+      <article class="product-card" data-id="1" data-brand="jordan" data-name="Air Jordan 1 Retro High OG" data-color="Chicago" data-price="17200" data-last="16400" data-img="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=400&h=400&fit=crop" alt="Air Jordan 1">
+          <span class="badge">Hot</span>
+          <button class="fav-btn" data-id="1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Air Jordan 1 Retro High OG</h3>
+          <p class="product-color">Chicago</p>
+          <div class="product-price">
+            <span class="price">RD$17,200</span>
+            <span class="last-sale">Última venta: RD$16,400</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="2" data-brand="nike" data-name="Nike Dunk Low Retro" data-color="Panda" data-price="8600" data-last="8200" data-img="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop" alt="Nike Dunk">
+          <button class="fav-btn" data-id="2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Nike Dunk Low Retro</h3>
+          <p class="product-color">Panda</p>
+          <div class="product-price">
+            <span class="price">RD$8,600</span>
+            <span class="last-sale">Última venta: RD$8,200</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="3" data-brand="yeezy" data-name="adidas Yeezy Boost 350 V2" data-color="Zebra" data-price="18600" data-last="17800" data-img="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&h=400&fit=crop" alt="Yeezy">
+          <span class="badge new">Nuevo</span>
+          <button class="fav-btn" data-id="3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">adidas Yeezy Boost 350 V2</h3>
+          <p class="product-color">Zebra</p>
+          <div class="product-price">
+            <span class="price">RD$18,600</span>
+            <span class="last-sale">Última venta: RD$17,800</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="4" data-brand="newbalance" data-name="New Balance 550" data-color="White Green" data-price="10000" data-last="9200" data-img="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop" alt="NB 550">
+          <button class="fav-btn" data-id="4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">New Balance 550</h3>
+          <p class="product-color">White Green</p>
+          <div class="product-price">
+            <span class="price">RD$10,000</span>
+            <span class="last-sale">Última venta: RD$9,200</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="5" data-brand="nike" data-name="Nike Air Force 1 '07" data-color="Triple White" data-price="7100" data-last="6700" data-img="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400&h=400&fit=crop" alt="AF1">
+          <button class="fav-btn" data-id="5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Nike Air Force 1 '07</h3>
+          <p class="product-color">Triple White</p>
+          <div class="product-price">
+            <span class="price">RD$7,100</span>
+            <span class="last-sale">Última venta: RD$6,700</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="6" data-brand="jordan" data-name="Air Jordan 4 Retro" data-color="Military Black" data-price="14600" data-last="13700" data-img="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?w=400&h=400&fit=crop" alt="Jordan 4">
+          <span class="badge">Hot</span>
+          <button class="fav-btn" data-id="6"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Air Jordan 4 Retro</h3>
+          <p class="product-color">Military Black</p>
+          <div class="product-price">
+            <span class="price">RD$14,600</span>
+            <span class="last-sale">Última venta: RD$13,700</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="7" data-brand="nike" data-name="Travis Scott x Nike" data-color="Cactus Jack" data-price="53000" data-last="50600" data-img="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop" alt="Travis Scott">
+          <button class="fav-btn" data-id="7"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">Travis Scott x Nike</h3>
+          <p class="product-color">Cactus Jack</p>
+          <div class="product-price">
+            <span class="price">RD$53,000</span>
+            <span class="last-sale">Última venta: RD$50,600</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card" data-id="8" data-brand="adidas" data-name="adidas Samba OG" data-color="Core Black" data-price="5800" data-last="5500" data-img="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=400&h=400&fit=crop">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=400&h=400&fit=crop" alt="Samba">
+          <button class="fav-btn" data-id="8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></button>
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">adidas Samba OG</h3>
+          <p class="product-color">Core Black</p>
+          <div class="product-price">
+            <span class="price">RD$5,800</span>
+            <span class="last-sale">Última venta: RD$5,500</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how-it-works">
+    <div class="section-header centered">
+      <h2>Cómo funciona</h2>
+      <p>Compra y vende con total confianza</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Busca</h3>
+        <p>Encuentra el producto que quieres entre cientos de artículos autenticados.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Compra o vende</h3>
+        <p>Haz una oferta o compra al instante. Vende fácilmente desde tu cuenta.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Autenticamos</h3>
+        <p>Cada artículo pasa por nuestro proceso de autenticación.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Recibe</h3>
+        <p>Envío rápido y seguro a tu puerta en República Dominicana.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content">
+      <h2>¿Listo para empezar?</h2>
+      <p>Únete a la comunidad de Juan Clothing.</p>
+      <a href="#" class="btn-primary btn-lg">Crear cuenta gratis</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="#" class="logo">
+          <span class="logo-main">Juan</span>
+          <span class="logo-sub">CLOTHING</span>
+        </a>
+        <p class="footer-desc">Streetwear y sneakers auténticos en República Dominicana.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Comprar</h4>
+        <a href="#">Sneakers</a>
+        <a href="#">Ropa</a>
+        <a href="#">Accesorios</a>
+        <a href="#">Coleccionables</a>
+      </div>
+      <div class="footer-col">
+        <h4>Vender</h4>
+        <a href="#">Cómo vender</a>
+        <a href="#">Tarifas</a>
+        <a href="#">Autenticación</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ayuda</h4>
+        <a href="#">Centro de ayuda</a>
+        <a href="#">Contacto</a>
+        <a href="#">Estado del pedido</a>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Carreras</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Juan Clothing · República Dominicana</p>
+      <div class="footer-links">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image">
+          <img id="modalImg" src="" alt="">
+        </div>
+        <div class="modal-info">
+          <h2 id="modalName"></h2>
+          <p class="modal-color" id="modalColor"></p>
+          <div class="modal-price">
+            <span class="price" id="modalPrice"></span>
+            <span class="last-sale" id="modalLast"></span>
+          </div>
+          <p class="modal-desc">Producto 100% autenticado. Envío a toda República Dominicana. Garantía Juan Clothing.</p>
+          <div class="modal-actions">
+            <button class="btn-primary btn-lg" id="addToCartBtn">Añadir al carrito</button>
+            <button class="btn-outline btn-lg" id="modalFavBtn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              Favorito
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARRITO -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Tu carrito</h3>
+      <button class="modal-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">RD$0</strong>
+      </div>
+      <button class="btn-primary btn-lg" id="checkoutBtn" style="width:100%">Finalizar compra</button>
+    </div>
+  </aside>
+
+  <!-- FAVORITOS -->
+  <div class="cart-overlay" id="favOverlay"></div>
+  <aside class="cart-sidebar" id="favSidebar">
+    <div class="cart-header">
+      <h3>Tus favoritos</h3>
+      <button class="modal-close" id="favClose">&times;</button>
+    </div>
+    <div class="cart-items" id="favItems"></div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html> 
